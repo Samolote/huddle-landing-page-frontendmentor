@@ -43,7 +43,7 @@ html {
 
 .image {
 	display: block;
-	max-width: 100%;
+	max-width: 500px;
 }
 
 .button {
@@ -118,7 +118,7 @@ html {
 }
 
 .hero__image {
-	margin: 0 0 1rem;
+	margin: 0 auto 1rem;
 	padding: 0 1rem;
 }
 
@@ -139,7 +139,7 @@ html {
 }
 
 .card__image {
-	margin: 0 0 4rem;
+	margin: 0 auto 4rem;
 }
 
 .card__heading {
@@ -160,7 +160,9 @@ html {
 }
 
 .cta__container {
+	margin: 0 auto;
 	padding: 3rem 0;
+	max-width: 800px;
 	background-color: var(--white);
 	transform: translateY(-60%);
 	box-shadow: 0 0 1rem -0.6rem var(--very-dark-cyan);
@@ -206,7 +208,7 @@ html {
 }
 
 .list--contact {
-	margin: 0 0 2rem;
+	margin: 0 0 2.25rem;
 }
 
 .footer__item {
@@ -336,5 +338,166 @@ html {
 }
 
 .attribution__anchor {
-	color: hsl(228, 45%, 44%);
+	color: var(--pink);
+}
+
+@media (min-width: 500px) {
+	html {
+		font-size: 16px;
+	}
+}
+
+@media (min-width: 800px) {
+	html {
+		font-size: 18px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.hero {
+		padding: 2.5rem 4.5rem;
+	}
+
+	.image {
+		max-width: 100%;
+	}
+
+	.hero__top {
+		margin-bottom: 3rem;
+	}
+
+	.hero__brand {
+		height: 1.4rem;
+	}
+
+	.hero__top-button {
+		padding: 0.6rem 2.5rem;
+	}
+
+	.hero__flex-container,
+	.card {
+		align-items: center;
+	}
+
+	.hero__flex-container,
+	.card:nth-child(even) {
+		flex-direction: row;
+	}
+
+	.hero__text-content,
+	.card__text-content {
+		text-align: left;
+	}
+
+	.hero__heading,
+	.hero__text {
+		padding: 0;
+	}
+
+	.hero__image {
+		flex-basis: 53%;
+		margin: 0 0 0 auto;
+		padding: 0;
+	}
+
+	.hero__text-content {
+		flex-basis: 43%;
+	}
+
+	.hero__heading {
+		width: 80%;
+		font-size: 2em;
+	}
+
+	.hero__bottom-button {
+		margin: 0;
+		padding: 1rem 4rem;
+	}
+
+	.cards {
+		padding: 4rem 5rem 12rem;
+	}
+
+	.card {
+		padding: 4rem 2.5rem 3rem 5rem;
+	}
+
+	.card:nth-child(odd) {
+		flex-direction: row-reverse;
+	}
+
+	.card:nth-child(even) {
+		justify-content: flex-end;
+	}
+
+	.card:nth-child(odd) .card__image,
+	.card:nth-child(even) .card__text-content {
+		margin-left: auto;
+	}
+
+	.card:nth-child(odd) .card__text-content,
+	.card:nth-child(even) .card__image {
+		margin-left: 2rem;
+	}
+
+	.card__text-content {
+		flex-basis: 42%;
+	}
+
+	.card__image {
+		margin: 0;
+		flex-basis: 40%;
+	}
+
+	.card__heading {
+		font-size: 1.5em;
+	}
+
+	.cta__heading {
+		font-size: 1.7em;
+	}
+
+	.cta__button {
+		padding: 1.5rem 6rem;
+		font-size: 1em;
+	}
+
+	.footer {
+		padding: 0 4rem 0 6rem;
+	}
+
+	.footer__brand-container {
+		margin: 0 0 3rem;
+	}
+
+	.footer__brand {
+		height: 2.2rem;
+	}
+
+	.footer__list,
+	.socials {
+		flex-basis: 15%;
+	}
+
+	.list--contact {
+		margin-right: 12%;
+		flex-basis: 30%;
+	}
+
+	.footer__item {
+		font-size: 0.9em;
+	}
+
+	.item--contact {
+		font-size: 0.85em;
+	}
+
+	.socials {
+		justify-content: flex-start;
+		margin: 0 0 0 3rem;
+	}
+
+	.footer__copyright {
+		text-align: right;
+	}
 }
