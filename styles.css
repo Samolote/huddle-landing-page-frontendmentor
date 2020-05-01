@@ -356,6 +356,7 @@ html {
 @media (min-width: 1024px) {
 	.hero {
 		padding: 2.5rem 4.5rem;
+		background-image: url('./assets/images/bg-hero-desktop.svg');
 	}
 
 	.hero__top {
